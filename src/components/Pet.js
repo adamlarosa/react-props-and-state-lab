@@ -1,7 +1,5 @@
 import React from 'react'
 
-/* All these values should be props. */
-
 class Pet extends React.Component {
   adoptedButton = () => {
     if (this.props.pet.isAdopted) {
@@ -20,9 +18,7 @@ class Pet extends React.Component {
 
   render() {
     const {age, gender, name, type, weight} = this.props.pet
-
     return (
-      
       <div className="card">
         <div className="content">
           <a className="header">
@@ -39,8 +35,6 @@ class Pet extends React.Component {
         </div>
         <div className="extra content">
           {this.adoptedButton()}
-          {/* <button className="ui disabled button">Already adopted</button>
-          <button className="ui primary button">Adopt pet</button> */}
         </div>
       </div>
     )

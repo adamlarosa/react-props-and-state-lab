@@ -1,20 +1,6 @@
 import React from 'react'
 
 class Filters extends React.Component {
-
-  constructor() {
-    super();
-    this.state = {
-
-    }
-  }
-
-  // valueSelect = (e) => {
-  //   this.setState({
-  //     selection: e.target.value
-  //   })
-  // }
-
   render() {
     const {onChangeType, onFindPetsClick} = this.props
     return (
@@ -31,7 +17,6 @@ class Filters extends React.Component {
             <option value="micropig">Micropigs</option>
           </select>
         </div>
-
         <div className="field">
           <button 
             onClick = {(e) => onFindPetsClick(e)}
